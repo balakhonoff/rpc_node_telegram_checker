@@ -30,6 +30,18 @@ source ~/up_env/bin/activate
 python alert_bot.py
 ```
 
+Run the data collection script in cron:
+```
+crontab -e 
+* * * * *  cd ~; source up_env/bin/activate; cd /path/to/script; python data_collection.py >> ~/collect.log 2>&1
+```
+
+Run the bot which can send charts:
+```
+source ~/up_env/bin/activate
+python chart_bot.py
+```
+
 Python version 3.8
 
 Screenshots:
@@ -38,8 +50,6 @@ Screenshots:
 *If everything is fine*
 ![If everything is fine](https://i.ibb.co/Fnp0Csj/Screenshot-2023-06-29-at-15-37-25.png)
 
-*If the node is lagging*
+*If the node is lagging or an alert happened*
 ![If the node is lagging](https://i.ibb.co/FbBCX1d/Screenshot-2023-06-29-at-15-53-58.png)
-
-
 
