@@ -18,10 +18,16 @@ pip install numpy
 pip install web3
 ```
 
-Run
+Run the bot which can respond with the current state:
 ```
 source ~/up_env/bin/activate
 python uptime_bot.py
+```
+
+Run the bot which can send alerts if something is wrong:
+```
+source ~/up_env/bin/activate
+python alert_bot.py
 ```
 
 Python version 3.8
